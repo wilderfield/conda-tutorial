@@ -1,0 +1,16 @@
+{% set version = "1.0.0" %}
+
+package:
+  name: protobuf-example-make
+  version: {{ version }}
+
+source:
+   path: ../
+
+requirements:
+  build:
+    - protobuf
+    - pkg-config
+    - make
+  run:
+    - protobuf

@@ -1,5 +1,6 @@
 # Conda Tutorial
   
+This tutorial guides someone on how to create their first conda package, from a C++ based project.  
 `Prerequisite: Install Anaconda`   
   
 This tutorial leverages an example C++ application from:
@@ -168,7 +169,7 @@ $ which add_person_cpp
 ## Difference with Cmake
 There really isn't much difference if your project was Cmake based.    
 Cmake will go and find your dependencies for you. We just have to nudge Cmake in the right direction.  
-Line26 of protobuf-example-cmake/build.sh tells Cmake to search the conda environment for dependencies.
+Line26 of protobuf-example-cmake/build.sh tells Cmake to search the conda environment for dependencies.  
 `cmake .. -DCMAKE_PREFIX_PATH=$BUILD_PREFIX`
   
 You can build the Cmake version with the same instructions as above, just use the -cmake directory.  

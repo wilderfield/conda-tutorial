@@ -15,7 +15,15 @@ This application produces two executables:
   - one will prompt the user for data, and store it in binary format (add_person_cpp)
   - one will dump the data from binary to readable text              (list_people_cpp)
 
-I chose this example, because it is a very common 3rd party library
+I chose this example, because it is a very common 3rd party library,
+
+## Install Anaconda
+```
+$ wget --no-check-certificate https://repo.anaconda.com/archive/Anaconda2-2019.10-Linux-x86_64.sh -O ./anaconda.sh && \
+  /bin/bash ./anaconda.sh -b -p ~/anaconda2 && rm ./anaconda.sh
+
+$ echo ". ~/anaconda2/etc/profile.d/conda.sh" >> ~/.bashrc
+```
 
 ## Build the example application using make
 
